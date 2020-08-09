@@ -5,16 +5,16 @@ import { WebView } from 'react-native-webview'
 export default function App() {
 	return (
 		<WebView
-			source={{ uri: 'http://192.168.0.125:8000/index.html' }}
-			style={styles.container}
+			overScrollMode={'never'}
+			source={{ uri: 'http://192.168.0.125:8000/image.jpg' }}
+			style={styles.webView}
 		/>
 	)
 }
 
 const styles = StyleSheet.create({
 	container: {
-		flex: 1,
+		flex: 0,
 		height: '100%',
-		width: '100%',
 	},
 })
